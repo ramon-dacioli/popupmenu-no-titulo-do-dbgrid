@@ -54,7 +54,7 @@ end;
 procedure TForm1.MenuItemClick(Sender: TObject);
 begin
   if Assigned(FSelectedColumn) and (Sender is TMenuItem) then
-    FSelectedColumn.Title.Caption := TMenuItem(Sender).Caption;
+    FSelectedColumn.Title.Caption := StringReplace(TMenuItem(Sender).Caption, '&', '', [rfReplaceAll]);
 end;
 
 end.

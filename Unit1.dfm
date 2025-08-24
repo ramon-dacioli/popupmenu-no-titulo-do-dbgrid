@@ -34,7 +34,6 @@ object Form1: TForm1
       end>
   end
   object PopupMenu1: TPopupMenu
-    AutoHotkeys = maManual
     Left = 320
     Top = 64
     object teste11: TMenuItem
